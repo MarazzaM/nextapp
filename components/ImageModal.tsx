@@ -18,7 +18,7 @@ const style = {
   p: 4,
 };
 
-export default function ImageModal(props: any) {
+export default function ImageModal (props: any)  {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -37,13 +37,13 @@ export default function ImageModal(props: any) {
           timeout: 500,
         }}
       >
-        <Fade in={open} className="fade-img">
+        <Fade in={open}>
           <Box sx={style}>
           <Image
         src= {props.url}
         alt="Tablas de talle"
-        width={500}
-        height={500}
+        width={800}
+        height={800}
       />
           </Box>
         </Fade>
