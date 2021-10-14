@@ -1,0 +1,102 @@
+/*========== FONTS ==========*/
+//Fredoka One
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+//Indie flower
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+/*========== shortcuts function color and screen size==========*/
+@function color($color-name){
+    @return map-get($colors,$color-name)
+};
+@mixin desktop {
+    @media(min-width: #{$desktop}){
+        @content;
+    }
+}
+@mixin desktop2 {
+    @media(max-width: #{$desktop2}){
+        @content;
+    }
+}
+@mixin desktop3 {
+    @media(min-width: #{$desktop3}){
+        @content;
+    }
+}
+@mixin button($bcolor,
+   $url,
+   $x1,
+   $y1,
+   $bor,
+   $col) {
+    background: $bcolor;
+    -webkit-mask: url($url);
+    mask: url($url);
+    -webkit-mask-size: $x1 $y1;
+    mask-size: $x1 $y1;
+    border: $bor;
+    color: $col;
+   }
+  
+   
+   
+$colors: (
+    primary: rgb(62, 92, 183),
+    secondary: rgb(234, 1, 81),
+    body: darken(rgb(243, 243, 240),3%),
+    nav-white:#fff,
+    nav-black: #000,
+    logo1:rgb(4, 4, 255),
+    logo2:rgb(247, 18, 208),
+    whatsapp:#25d365,
+);
+
+
+$desktop:768px;
+$desktop2:950px;
+$desktop3:1130px;
+
+//Fuente
+$font-body: 'Roboto Slab', serif;
+$font-logo:'Ephesis', cursive;
+$font-react: 'Roboto', sans-serif;
+
+$big-big-font: 8rem;
+$biggest-font-s: 9rem;
+$h1-font-size: 2.5rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 2rem;
+$regular-font: 1.3rem;
+$small-font: .81rem;
+$smallest-font: .75rem;
+$font-size-hero: 15vw;
+$icon-font: 3rem;
+$erizo-font:5rem;
+
+//spacing
+$normal-spacing:.1rem;
+$tittle-spacing:.2rem;
+
+//font weigth
+$font-media:500;
+$font-semi:600;
+
+//margins
+
+$mb-1: .5rem;
+$mb-2: 1rem;
+$mb-3: 1.5rem;
+$mb-4: 2rem;
+$mb-5: 2.5rem;
+$mb-6: 3rem;
+
+//index
+$z-tooltip:10;
+$z-fixed:100;
+
+//buttons variables
+$fuschia: rgb(64, 224, 208);
+$red: rgb(255, 4, 4);
+$button-bg: $fuschia;
+$button-bg2: $red;
+$button-text-color: #fff;
+$baby-blue: #f8faff;

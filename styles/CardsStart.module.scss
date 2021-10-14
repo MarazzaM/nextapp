@@ -1,0 +1,25 @@
+@import 'variables.scss';
+.cardsstart{
+    max-width: 1900px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @include desktop{
+        flex-direction: row;
+    }
+}
+.containercards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    span{
+        text-align: center;
+        font-size: 1.50rem;
+    }
+}
