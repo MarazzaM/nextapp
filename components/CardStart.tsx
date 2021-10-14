@@ -32,11 +32,11 @@ function CardStart(props: {
         <Card sx={{ maxWidth: 345 }} id={props.id} className='cardindex'>
           <CardActionArea>
             <div className='img-card-index'>
-              <Image
+              <img
                 src="/../public/logoimg.webp"
                 width="200"
                 height="200"
-              ></Image>
+              ></img>
             </div>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
