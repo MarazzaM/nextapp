@@ -7,20 +7,20 @@ function CarouselKids(props: any)
 {
     var items = [
         {
-            name: "Zapa Negra 27 al 34",
-            image: "/../public/kids/negra.webp"
+            name: "Zapa kids Negra 27 al 34",
+            image: "https://i.imgur.com/bOnvHpW.webp"
         },
         {
-            name: "Zapa Fucsia 27 al 34",
-            image: "/../public/kids/fucsia.webp"
+            name: "Zapa kids Fucsia 27 al 34",
+            image: "https://i.imgur.com/Yvn1qX8.webp"
         },
         {
-            name: "Zapa Beige 27 al 34",
-            image: "/../public/kids/beige.webp"
+            name: "Zapa kids Beige 27 al 34",
+            image: "https://i.imgur.com/KmpLjM4.webp"
         },
         {
-            name: "Zapa Roja 27 al 34",
-            image: "/../public/kids/roja.webp"
+            name: "Zapa kids Roja 27 al 34",
+            image: "https://i.imgur.com/m3HQUZZ.webp"
         },
     ]
 
@@ -39,10 +39,11 @@ function Item(props: any)
     return (
         <Paper>
             <h2>{props.item.name}</h2>
-            <Image src= {props.item.image}
+            <img src= {props.item.image}
             width={300}
             height={300}
-            ></Image>
+            loading="lazy"
+            ></img>
         </Paper>
     )
 }

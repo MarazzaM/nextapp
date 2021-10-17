@@ -4,7 +4,6 @@ import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
-import Image from 'next/image';
 
 const style = {
   position: 'absolute' as 'absolute',
@@ -39,7 +38,8 @@ export default function ImageModal (props: any)  {
       >
         <Fade in={open}>
           <Box sx={style}>
-          <Image
+          <img
+          loading="lazy"
         src= {props.url}
         alt="Tablas de talle"
         width={800}

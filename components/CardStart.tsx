@@ -1,10 +1,8 @@
 import React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
-import Image from "next/image";
 import Link from "next/link";
 import { UrlObject } from "url";
 
@@ -33,9 +31,10 @@ function CardStart(props: {
           <CardActionArea>
             <div className='img-card-index'>
               <img
-                src="https://i.imgur.com/rPwE3Fb.png"
+                src="https://i.imgur.com/SdwyvE9.webp"
                 width="200"
                 height="200"
+                loading="lazy"
               ></img>
             </div>
             <CardContent>

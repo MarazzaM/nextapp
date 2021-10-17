@@ -8,27 +8,27 @@ function CarouselBoots(props: any)
     var items = [
         {
             name: "Botitas lona 36 al 45",
-            image: "/../public/boots/whiteandblack.webp"
+            image: "https://i.imgur.com/fWiWb0Y.webp"
+        },
+        {
+            name: "Botitas lona 36 al 40",
+            image: "https://i.imgur.com/R4tDU8p.webp"
         },
         {
             name: "Botitas lona 36 al 45",
-            image: "/../public/boots/rojo.webp"
-        },
-        {
-            name: "Botitas lona 36 al 45",
-            image: "/../public/boots/trescolores.webp"
+            image: "https://i.imgur.com/x3XrUWU.webp"
         },
         {
             name: "Botita lona 36 al 40",
-            image: "/../public/boots/jean.webp"
+            image: "https://i.imgur.com/BzEQBSD.webp"
         },
         {
             name: "Botitas lona 41 al 45",
-            image: "/../public/boots/bordo.webp"
+            image: "https://i.imgur.com/kcpi4nJ.webp"
         },
         {
-            name: "Botitas lona 36 al 45",
-            image: "/../public/boots/ecocuero.webp"
+            name: "Botitas Eco 36 al 45",
+            image: "https://i.imgur.com/EYZkQfA.webp"
         },
     ]
 
@@ -47,10 +47,11 @@ function Item(props: any)
     return (
         <Paper>
             <h2>{props.item.name}</h2>
-            <Image src= {props.item.image}
+            <img src= {props.item.image}
             width={300}
             height={300}
-            ></Image>
+            loading="lazy"
+            ></img>
         </Paper>
     )
 }

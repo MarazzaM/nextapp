@@ -10,9 +10,9 @@ const variants = {
     exit: { opacity: 0, x: 0, y: -100 },
 }
 const urls = [
-    {url:"/../public/buy/sabertalle.webp",},
-      { url:"/../public/buy/tablastar.webp", },
-      { url:"/../public/buy/tablashoes.webp",},
+    {url:"https://i.imgur.com/9PU113d.webp",},
+      { url:"https://i.imgur.com/uQxlJSW.webp", },
+      { url:"https://i.imgur.com/SEW9EaJ.webp",},
     ]
 
 function Buy() {
@@ -30,8 +30,9 @@ function Buy() {
             <h2>MEDÍ TUS TALLES PARA QUE TE LLEGUE LA MEDIDA PERFECTA</h2>
             <div className="images-buy">
                 <div>
-            <Image
-        src="/../public/buy/sabertalle.webp"
+            <img
+            loading="lazy"
+        src="https://i.imgur.com/9PU113d.webp"
         alt="Picture of the author"
         width={300}
         height={300}
@@ -41,8 +42,9 @@ function Buy() {
       />
                 </div>
         <div>
-        <Image
-        src="/../public/buy/tablastar.webp"
+        <img
+        loading="lazy"
+        src="https://i.imgur.com/uQxlJSW.webp"
         alt="Picture of the author"
         width={300}
         height={300}
@@ -53,8 +55,9 @@ function Buy() {
         </div>
 
         <div>
-        <Image
-        src="/../public/buy/tablashoes.webp"
+        <img
+        loading="lazy"
+        src="https://i.imgur.com/SEW9EaJ.webp"
         alt="Picture of the author"
         width={300}
         height={300}

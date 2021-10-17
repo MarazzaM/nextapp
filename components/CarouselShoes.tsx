@@ -8,19 +8,19 @@ function CarouselShoes(props: any)
     var items = [
         {
             name: "Skater Negra 36 al 44",
-            image: "/../public/zapatos/vans.webp"
+            image: "https://i.imgur.com/AhXXfpY.webp"
         },
         {
             name: "Ecocuero suela 37 al 44",
-            image: "/../public/zapatos/suela.webp"
+            image: "https://i.imgur.com/zGddyhc.webp"
         },
         {
             name: "Ecocuero visón 37 al 44",
-            image: "/../public/zapatos/vison.webp"
+            image: "https://i.imgur.com/eVrH1gr.webp"
         },
         {
             name: "Ecocuero gris 37 al 44",
-            image: "/../public/zapatos/gris.webp"
+            image: "https://i.imgur.com/xVLo0t0.webp"
         },
     ]
 
@@ -39,10 +39,11 @@ function Item(props: any)
     return (
         <Paper>
             <h2>{props.item.name}</h2>
-            <Image src= {props.item.image}
+            <img src= {props.item.image}
             width={300}
             height={300}
-            ></Image>
+            loading="lazy"
+            ></img>
         </Paper>
     )
 }

@@ -1,12 +1,11 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import Link from "next/link";
 import { UrlObject } from "url";
-import Image from "next/image";
+
 
 export default function CardStep(props: {
     path: string | UrlObject;
@@ -38,11 +37,12 @@ export default function CardStep(props: {
             <Typography variant="body2" color="text.secondary">
               {props.text}
             </Typography>
-            <Image
-                src="/../public/logoimg.webp"
+            <img
+                src="https://i.imgur.com/SdwyvE9.webp"
                 width="200"
                 height="200"
-              ></Image>
+                loading="lazy"
+              ></img>
           </CardContent>
         </CardActionArea>
       </Card>
