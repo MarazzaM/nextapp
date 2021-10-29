@@ -46,9 +46,11 @@ body{
     a{
       color: color(nav-white);
       text-decoration: none;
+      @include desktop{
       transition: cubic-bezier(0.68, -0.55, 0.256,1.55);
       transition-duration: .7s;
 
+      }
     }
   }
 
@@ -161,10 +163,11 @@ justify-content: space-evenly;
 }
 .bx-down-arrow-alt {
   font-size: 2rem;
+ @include desktop{
   -webkit-animation: arrow-jump 2s infinite;
   -moz-animation:    arrow-jump 2s infinite;
   -o-animation:      arrow-jump 2s infinite;
-  animation:         arrow-jump 2s infinite;
+  animation:         arrow-jump 2s infinite;}
 }
 //carousel base
 .Carousel-root-1{
