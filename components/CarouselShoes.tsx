@@ -1,7 +1,6 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper } from '@material-ui/core'
-import Image from 'next/image'
 
 function CarouselShoes(props: any)
 {
@@ -25,7 +24,10 @@ function CarouselShoes(props: any)
     ]
 
     return (
-        <Carousel>
+        <Carousel
+        interval= {5500}
+        animation= { "slide" }
+        >
             {
                 items.map( (item, i) => <Item key={i} item={item} /> )
             }

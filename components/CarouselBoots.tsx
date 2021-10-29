@@ -33,7 +33,10 @@ function CarouselBoots(props: any)
     ]
 
     return (
-        <Carousel>
+        <Carousel
+        interval= {6000}
+        animation= { "slide" }
+        >
             {
                 items.map( (item, i) => <Item key={i} item={item} /> )
             }

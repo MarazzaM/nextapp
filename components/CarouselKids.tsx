@@ -25,7 +25,10 @@ function CarouselKids(props: any)
     ]
 
     return (
-        <Carousel>
+        <Carousel
+        interval= {6500}
+        animation= { "slide" }
+        >
             {
                 items.map( (item, i) => <Item key={i} item={item} /> )
             }

@@ -28,7 +28,10 @@ function Example(props: any)
     ]
 
     return (
-        <Carousel>
+        <Carousel
+        interval= {5000}
+        animation= { "slide" }
+        >
             {
                 items.map( (item, i) => <Item key={i} item={item} /> )
             }
