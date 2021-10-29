@@ -26,7 +26,10 @@ body{
   align-items: center;
   justify-content: space-between;
   height: 3rem;
+  @include desktop{
   transition: all .5s cubic-bezier(.39,.58,.57,1);
+
+  }
   .theme-changer{
       margin-right: 2rem;
   }
